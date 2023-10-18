@@ -1,0 +1,16 @@
+#menu {
+    position: fixed;
+    top: 0;
+    bottom: 90px;
+    left: 0;
+    z-index: 2;
+    background-color: black;
+    width: 230px;
+}
+
+@media screen and (max-width: 576px) {
+    #menu {
+        width: 50px;
+    }
+
+}

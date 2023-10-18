@@ -1,4 +1,9 @@
 body {
     background-color: #141922;
     font-family: 'Montserrat', sans-serif;
+    min-height: 222px;
+}
+
+main {
+    overflow-y: scroll;
 }
