@@ -1,0 +1,19 @@
+#call-to-action {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--colore-secondario);
+}
+
+#call-to-action button {
+    border: 1px solid var(--colore-secondario);
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    margin-right: 20px;
+}
