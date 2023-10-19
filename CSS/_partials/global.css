@@ -2,8 +2,28 @@ body {
     background-color: #141922;
     font-family: 'Montserrat', sans-serif;
     min-height: 222px;
+    overflow: hidden;
 }
 
 main {
     overflow-y: scroll;
 }
+
+/* Utilities */
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* /Utilities */
+
+/* Transizioni */
+.scale:hover {
+    scale: 1.075;
+}
+
+.scale {
+    transition: scale linear .075s;
+}
+
+/* /Transizioni */

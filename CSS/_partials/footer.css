@@ -4,6 +4,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 4;
     background-color: #282828;
     display: flex;
     justify-content: space-between;

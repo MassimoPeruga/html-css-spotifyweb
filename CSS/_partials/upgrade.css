@@ -8,11 +8,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: var(--colore-secondario);
+    color: var(--bianco);
+    z-index: 2;
 }
 
-#call-to-action button {
-    border: 1px solid var(--colore-secondario);
+#call-to-action a {
+    border: 1px solid var(--bianco);
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     margin-right: 20px;

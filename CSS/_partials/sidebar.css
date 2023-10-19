@@ -1,0 +1,215 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 90px;
+    left: 0;
+    z-index: 3;
+    background-color: black;
+    width: 230px;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--bianco);
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+/* Sezione Menu */
+#menu {
+    width: 100%;
+}
+
+#logo {
+    width: 8rem;
+    margin: 20px;
+}
+
+#logo-small {
+    display: none;
+    width: 1.75rem;
+    margin: 12px 0;
+}
+
+#menu ul {
+    margin-bottom: 30px;
+}
+
+#menu>ul a {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    padding-left: 20px;
+}
+
+#menu a {
+    opacity: 50%;
+}
+
+#menu a:hover {
+    opacity: 100%;
+}
+
+#menu ul img {
+    width: 1.375rem;
+}
+
+#menu #highlight {
+    border-left: 3px solid var(--verde);
+    opacity: 100%;
+    padding-left: 17px;
+}
+
+/* /Sezione Menu */
+
+/* Sezione Playlist */
+#playlist {
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+#playlist h6 {
+    font-size: inherit;
+    margin-bottom: 16px;
+}
+
+#new {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 50%;
+}
+
+#new .box {
+    width: 37px;
+    height: 37px;
+    background-color: var(--bianco);
+}
+
+#new i {
+    width: 37px;
+    height: 37px;
+    background-color: var(--bianco);
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 37px;
+}
+
+#playlist ul {
+    margin-top: 23px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    margin-bottom: 26px;
+}
+
+/* Sezione /Playlist */
+
+
+/* Sezione Account */
+#account {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#download {
+    color: var(--bianco);
+    opacity: 50%;
+}
+
+#download:hover {
+    opacity: 100%;
+}
+
+#download img {
+    width: 1rem;
+}
+
+#account a {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+#account hr {
+    margin: 12px 0;
+    opacity: 50%;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--bianco);
+    font-size: .875rem;
+}
+
+#profile .circle {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* /Sezione Account */
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    #sidebar {
+        width: 50px;
+    }
+
+    .visibility {
+        display: none;
+    }
+
+    /* Sezione Menu */
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-small {
+        display: block;
+    }
+
+    #menu a {
+        padding: 0;
+    }
+
+    #menu #highlight {
+        border-left: none;
+        opacity: 50%;
+        padding: 0;
+    }
+
+    /* /Sezione Menu */
+
+    /* Sezione Account */
+    #account {
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #account hr {
+        opacity: 0%;
+    }
+
+    /* /Sezione Account */
+}
+
+/* /Responsive */
