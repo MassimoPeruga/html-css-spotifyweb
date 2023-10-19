@@ -20,7 +20,7 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
     #call-to-action {
         left: 50px;
     }

@@ -4,4 +4,146 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--bianco);
 }
+
+/* Sinistra */
+#sinistra {
+    max-width: 230px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sinistra .riga {
+    display: flex;
+    align-items: center;
+}
+
+#sinistra img {
+    margin: auto 12px;
+    width: 42px;
+}
+
+#sinistra h5 {
+    font-size: .75rem;
+}
+
+#sinistra .riga a {
+    font-size: .625rem;
+    font-weight: bold;
+}
+
+#sinistra .riga a:hover {
+    text-decoration: underline;
+}
+
+#sinistra .colonna {
+    display: flex;
+}
+
+#sinistra a {
+    opacity: .5;
+}
+
+#sinistra .colonna a {
+    margin: 3px 7px;
+}
+
+#sinistra a:hover {
+    opacity: 1;
+}
+
+/* /Sinistra */
+
+
+/* Centro */
+#centro {
+    width: 40%;
+    height: 100%;
+    flex-basis: auto;
+    margin-left: 46px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#centro .riga-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#centro .riga-1 i {
+    font-size: 1rem;
+}
+
+#centro .riga-1 .space {
+    margin: 0 22px;
+}
+
+#centro .riga-1 #play {
+    font-size: 2rem;
+    margin: 0 30px;
+}
+
+#centro .riga-2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: .625rem;
+    width: 100%;
+}
+
+#riproduzione {
+    width: 80%;
+}
+
+/* /Centro */
+
+
+/* Destra */
+#destra {
+    max-width: 220px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    font-size: .75rem;
+}
+
+#volume {
+    width: 50%;
+}
+
+/* /Destra */
+
+/* /S */
+@media screen and (max-width: 767.98px) {
+    #sinistra .colonna {
+        flex-direction: column;
+    }
+}
+
+/* /S */
+
+/* XS */
+@media screen and (max-width: 575.98px) {
+
+    /* Destra */
+    #destra i {
+        scale: .625;
+        transition: scale linear .1s;
+    }
+
+    /* /Destra */
+}
+
+/* /XS */

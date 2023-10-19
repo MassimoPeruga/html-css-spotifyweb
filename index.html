@@ -108,6 +108,7 @@
                     L'UPGRADE</a>
             </div>
             <!-- /Call to action -->
+            <div id="contenuto"></div>
         </main>
         <!-- /Main -->
     </div>
@@ -115,7 +116,45 @@
 
     <!-- Footer -->
     <footer>
-
+        <div id="sinistra">
+            <div class="riga">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div>
+                    <h5>Sinister</h5>
+                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        Brano Nome
+                    </a>
+                </div>
+            </div>
+            <div class="colonna">
+                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-folder"></i>
+                </a>
+            </div>
+        </div>
+        <div id="centro">
+            <div class="riga-1">
+                <button><i class="fa-solid fa-shuffle space"></i></button>
+                <button><i class="fa-solid fa-backward-step"></i></button>
+                <button><i id="play" class="fa-regular fa-circle-play scale"></i></button>
+                <button><i class="fa-solid fa-forward-step"></i></button>
+                <button><i class="fa-solid fa-rotate-right space"></i></button>
+            </div>
+            <div class="riga-2">
+                <span>0:25</span>
+                <input type="range" min="0" max="100" step="1" value="25" id="riproduzione">
+                <span>4:35</span>
+            </div>
+        </div>
+        <div id="destra">
+            <button><i class="fa-solid fa-list-ul"></i></button>
+            <button><i class="fa-solid fa-desktop"></i></button>
+            <button><i class="fa-solid fa-volume-high"></i></button>
+            <input type="range" min="0" max="100" step="1" value="25" id="volume">
+        </div>
     </footer>
     <!-- /Footer -->
 </body>

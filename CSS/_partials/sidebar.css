@@ -73,12 +73,6 @@
     opacity: 50%;
 }
 
-#new .box {
-    width: 37px;
-    height: 37px;
-    background-color: var(--bianco);
-}
-
 #new i {
     width: 37px;
     height: 37px;
@@ -146,7 +140,7 @@
 /* /Sezione Account */
 
 /* Responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
     #sidebar {
         width: 50px;
         justify-content: space-between;
@@ -175,6 +169,10 @@
         border-left: none;
         opacity: 50%;
         padding: 0;
+    }
+
+    #menu #highlight:hover {
+        opacity: 100%;
     }
 
     /* /Sezione Menu */
