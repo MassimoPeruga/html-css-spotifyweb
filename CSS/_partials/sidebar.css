@@ -2,17 +2,23 @@
     background-color: black;
     width: 230px;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
+    overflow: hidden;
     color: var(--bianco);
     font-size: .75rem;
     font-weight: bold;
 }
 
-/* Sezione Menu */
-#menu {
-    width: 100%;
+#sidebar a {
+    opacity: 50%;
 }
 
+#sidebar a:hover {
+    opacity: 100%;
+}
+
+/* Sezione Menu */
 #logo {
     width: 8rem;
     margin: 20px;
@@ -24,24 +30,12 @@
     margin: 12px 0;
 }
 
-#menu ul {
-    margin-bottom: 30px;
-}
-
 #menu>ul a {
     height: 35px;
     display: flex;
     align-items: center;
     gap: .625rem;
     padding-left: 20px;
-}
-
-#menu a {
-    opacity: 50%;
-}
-
-#menu a:hover {
-    opacity: 100%;
 }
 
 #menu ul img {
@@ -58,10 +52,11 @@
 
 /* Sezione Playlist */
 #playlist {
-    width: 100%;
-    margin-top: auto;
-    flex-grow: 1;
+    margin-top: 23px;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     overflow: hidden;
 }
 
@@ -71,6 +66,7 @@
 }
 
 #new {
+    margin-bottom: 23px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -94,7 +90,6 @@
 }
 
 #playlist ul {
-    margin-top: 23px;
     overflow-y: auto;
 }
 
@@ -107,17 +102,8 @@
 
 /* Sezione Account */
 #account {
-    width: 100%;
+    margin-top: auto;
     padding: 10px 20px;
-}
-
-#download {
-    color: var(--bianco);
-    opacity: 50%;
-}
-
-#download:hover {
-    opacity: 100%;
 }
 
 #download img {
@@ -163,6 +149,7 @@
 @media screen and (max-width: 576px) {
     #sidebar {
         width: 50px;
+        justify-content: space-between;
     }
 
     .visibility {
@@ -191,6 +178,13 @@
     }
 
     /* /Sezione Menu */
+
+    /* Sezione Playlist */
+    #playlist {
+        display: none;
+    }
+
+    /* /Sezione Playlist */
 
     /* Sezione Account */
     #account {

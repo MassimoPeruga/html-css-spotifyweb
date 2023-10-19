@@ -18,3 +18,10 @@
     border-radius: 2rem;
     margin-right: 20px;
 }
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    #call-to-action {
+        left: 50px;
+    }
+}
