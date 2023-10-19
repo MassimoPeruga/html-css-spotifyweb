@@ -1,12 +1,19 @@
 body {
     background-color: #141922;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
     min-height: 222px;
-    overflow: hidden;
+}
+
+#container-top {
+    height: calc(100% - 90px);
+    display: flex;
 }
 
 main {
-    overflow-y: scroll;
+    height: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* Utilities */
