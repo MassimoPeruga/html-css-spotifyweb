@@ -1,0 +1,35 @@
+#contenuto {
+    padding: 22px;
+}
+
+#librerie {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--bianco);
+    font-size: .75rem;
+    gap: 22px;
+}
+
+#librerie a {
+    opacity: 50%;
+}
+
+#librerie a:hover {
+    opacity: 1;
+}
+
+#selezionato {
+    position: relative;
+}
+
+#selezionato::after {
+    content: "____";
+    color: var(--verde);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+}

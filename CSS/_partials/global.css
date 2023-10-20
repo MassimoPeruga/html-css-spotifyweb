@@ -21,6 +21,10 @@ main {
     overflow: hidden;
 }
 
+.maiuscolo {
+    text-transform: uppercase;
+}
+
 /* /Utilities */
 
 /* Transizioni */
