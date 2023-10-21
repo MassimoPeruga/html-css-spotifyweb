@@ -1,0 +1,83 @@
+/* La scrollbar non viene coperta dall'opacità dell'header*/
+#call-to-action {
+    border-right: 12px solid black;
+}
+
+#call-to-action a {
+    margin-right: 10px;
+}
+
+/* /La scrollbar non viene coperta dall'opacità dell'header*/
+
+/* Gli elementi non vanno a capo ma compare una scrollbar */
+#contenuto {
+    padding-right: 0;
+}
+
+#contenuto section ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+#contenuto section ul li {
+    flex: 0 0 auto;
+}
+
+/* /Gli elementi non vanno a capo ma compare una scrollbar */
+
+/* Personalizzazione delle scrollbar */
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #141922;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--verde);
+    border: 4px solid #141922;
+    border-radius: 6px;
+}
+
+ul::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #141922;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #da39a3;
+    border: 4px solid #141922;
+    border-radius: 6px;
+}
+
+#sidebar ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+#sidebar ::-webkit-scrollbar-track {
+    background: black;
+}
+
+#sidebar ::-webkit-scrollbar-thumb {
+    background-color: var(--bianco);
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+}
+
+/* /Personalizzazione delle scrollbar */
